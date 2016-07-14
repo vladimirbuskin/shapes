@@ -7,4 +7,4 @@ For regular browsers - JS (24Kb)
 
 
 For IE with babel-polyfill - JS (109Kb)
-<a href="https://vladimirbuskin.github.io/shapes/demoID/">https://vladimirbuskin.github.io/shapes/demoID/</a>
+<a href="https://vladimirbuskin.github.io/shapes/demoIE/">https://vladimirbuskin.github.io/shapes/demoIE/</a>
