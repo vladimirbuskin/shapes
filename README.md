@@ -1,7 +1,10 @@
 # Shapes
-shapes test task
+Shapes test
 
-Visible at <a href="https://shapes.github.io">https://shapes.github.io</a>
 
 For regular browsers - JS (24Kb)
-Could be built for IE with babel-polyfill - JS (109Kb)
+<a href="https://vladimirbuskin.github.io/shapes/demo/">https://vladimirbuskin.github.io/shapes/demo/</a>
+
+
+For IE with babel-polyfill - JS (109Kb)
+<a href="https://vladimirbuskin.github.io/shapes/demoID/">https://vladimirbuskin.github.io/shapes/demoID/</a>

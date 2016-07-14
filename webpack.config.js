@@ -13,7 +13,7 @@ function getEntrySources(sources) {
 module.exports = {
   entry: {
     app: getEntrySources([
-      //'babel-polyfill',
+      'babel-polyfill',
       './src/index.js'
     ])
   },
@@ -21,7 +21,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'build'),
     filename: '[name].[hash].js',
-    publicPath: '/',
+    publicPath: '',
     sourceMapFilename: '[name].[hash].js.map',
   },
 
