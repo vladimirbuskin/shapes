@@ -13,7 +13,7 @@ function getEntrySources(sources) {
 module.exports = {
   entry: {
     app: getEntrySources([
-      'babel-polyfill',
+      //'babel-polyfill',
       './src/index.js'
     ])
   },
