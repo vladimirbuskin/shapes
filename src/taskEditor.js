@@ -26,7 +26,13 @@ export default class TaskEditor extends Editor
   onClick(ev) {
     super.onClick(ev);
 
-    this.tmpPoints.push(new EPoint(ev.point));
+    var point = new EPoint(ev.point);
+    this.tmpPoints.push(point);
+
+    // add right away
+    if (this.tmpPoints.length <= 3) this.addLayer(point);
+
+    // when 3 drawn draw other figures
     if (this.tmpPoints.length == 3)
     {
       // parallelogram
@@ -50,12 +56,14 @@ export default class TaskEditor extends Editor
       // add layers
       this.addLayer(circle);
       this.addLayer(parallelogram);
+
+      // remove and add again to move them to the top
+      this.tmpPoints.forEach(super.removeLayer.bind(this));
       this.tmpPoints.forEach(super.addLayer.bind(this));
-      
       
       this.fire('drawn');
     }
-    
+
   }
 
   onResetClick() {
