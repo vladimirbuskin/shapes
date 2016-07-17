@@ -55,6 +55,12 @@ export default class Point {
     if (this.y > maxY) this.y = maxY;
   }
 
+  grid(g) {
+    var r = 0;//-(g | 0);
+    this.x -= -r + this.x%g;
+    this.y -= -r + this.y%g;
+  }
+
   toString() {
     return 'x' + this.x + " y" + this.y;
   }

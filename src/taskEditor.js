@@ -44,7 +44,7 @@ export default class TaskEditor extends Editor
         var pos = this.getPos(); // center point
         var area = this.area; // center point
 
-        // S = Math.PI*r^2 => r = sqrt ( PI  )
+        // S = Math.PI*r^2 => r = sqrt ( S / PI )
         circle.props.r = Math.sqrt(area / Math.PI);
         circle.props.area = area;
 

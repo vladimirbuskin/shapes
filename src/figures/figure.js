@@ -76,9 +76,13 @@ export default class Figure extends Evented {
   // drag handler
   setPos(point) {
     this.pos = point || this.pos;
-    
-    this.pos.validateLimits(0,0, document.documentElement.clientWidth, document.documentElement.clientHeight);
 
+    // snap to grid
+    //this.pos.grid(10);
+
+    // validate max values
+    this.pos.validateLimits(0,0, document.documentElement.clientWidth, document.documentElement.clientHeight);
+    
     this.update();
     this.fire('move', new LayerEvent(this));
   }
