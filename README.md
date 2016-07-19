@@ -9,3 +9,7 @@ For regular browsers - JS (24Kb)
 
 For IE with babel-polyfill - JS (109Kb)
 <a href="https://vladimirbuskin.github.io/shapes/demoIE/">https://vladimirbuskin.github.io/shapes/demoIE/</a>
+
+-------------------------------------------------
+Task details you can see here
+https://drive.google.com/file/d/0B0DEwt_QPBZUM1FyRHJ3ZGxwZURfR3I1bjltcnJnUmpTYnEw/view
