@@ -14,11 +14,13 @@ export default class DragHandler extends Handler {
   addHooks() {
     this.getControl().getEl().addEventListener('click', stopPropagation);
     this.getControl().getEl().addEventListener('mousedown', this._onDown);
+    this.getControl().getEl().addEventListener('touchstart', this._onDown);
   }
 
   removeHooks() {
     this.getControl().getEl().removeEventListener('click', stopPropagation);
     this.getControl().getEl().removeEventListener('mousedown', this._onDown);
+    this.getControl().getEl().removeEventListener('touchstart', this._onDown);
   }
 
   _onDown(e) {
@@ -32,6 +34,10 @@ export default class DragHandler extends Handler {
     // move, up handlers
     document.addEventListener('mousemove', this._onMove);
     document.addEventListener('mouseup', this._onUp);
+
+    // have to be passive because we do touch events
+    document.addEventListener('touchmove', this._onMove, { passive: false });
+    document.addEventListener('touchend', this._onUp, { passive: false });
   }
 
   _onMove(e) {
@@ -47,6 +53,9 @@ export default class DragHandler extends Handler {
     // move, up handlers
     document.removeEventListener('mousemove', this._onMove);
     document.removeEventListener('mouseup', this._onUp);
+
+    document.removeEventListener('touchmove', this._onMove);
+    document.removeEventListener('touchend', this._onUp);
   }
 }
 

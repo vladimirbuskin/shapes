@@ -4,7 +4,11 @@ import Point from '../structs/point';
 export default class MouseEvent {
 
   constructor(event) {
-    this.point = new Point(event.clientX, event.clientY);
+    let touch = event;
+    if (event.touches) {
+      touch = event.touches[0];
+    }
+    this.point = new Point(touch.clientX, touch.clientY);
     this.originalEvent = event;
   }
 
