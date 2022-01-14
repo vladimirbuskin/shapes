@@ -10,6 +10,8 @@ For regular browsers - JS (24Kb)
 For IE with babel-polyfill - JS (109Kb)
 <a href="https://vladimirbuskin.github.io/shapes/demoIE/">https://vladimirbuskin.github.io/shapes/demoIE/</a>
 
--------------------------------------------------
-Task details you can see here
-https://drive.google.com/file/d/0B0DEwt_QPBZUM1FyRHJ3ZGxwZURfR3I1bjltcnJnUmpTYnEw/view
+
+Details:
+Click 3 times within the client area of the browser, program will draw red circles in those points, blue parallelogram and yellow circle. 
+Drag points to see it changes. Circle is having the same area as rectangle.
+App shows points coordinates and circle/parallelogram area.
