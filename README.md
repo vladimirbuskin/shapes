@@ -1,6 +1,6 @@
 # Code Sample "SHAPES"
 
-Some of my UI code to share, fun tool to check. Vanilla JS, Html, CSS.
+Sample code to share, Vanilla JS, Html, CSS.
 
 Details:
 In the demo links below, click 3 times within the client area of the browser, program will draw red circles in those points, blue parallelogram and yellow circle. 
